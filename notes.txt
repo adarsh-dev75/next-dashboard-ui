@@ -1,0 +1,2 @@
+1. create snipets-> search snippets > configure > typescript.
+2. 
