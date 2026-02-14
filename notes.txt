@@ -1,2 +1,5 @@
 1. create snipets-> search snippets > configure > typescript.
-2. 
+2. using recharts for graphs
+3. use react-calender library
+4. use react-big-calender for student calender
+1.43
