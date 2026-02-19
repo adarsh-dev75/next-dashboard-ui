@@ -1,6 +1,6 @@
 import Announcements from "@/components/Announcements"
 import EventCalender from "@/components/EventCalender"
-import StudentCalendar from "@/components/StudentCalendar"
+import BigCalendar from "@/components/BigCalendar"
 
 const TeacherPage = () => {
   return (
@@ -8,7 +8,7 @@ const TeacherPage = () => {
       <div className="w-full xl:w-2/3">
         <div className="bg-white h-full p-4 rounded-md">
           <h1 className="text-lg font-semibold">Schedule</h1>
-          <StudentCalendar/>
+          <BigCalendar/>
         </div>
       </div>
       {/* RIGHT */}
