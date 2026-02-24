@@ -1,3 +1,4 @@
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination"
 import Table from "@/components/Table"
 import TableSearch from "@/components/TableSearch"
@@ -79,9 +80,7 @@ const TeachersList = () => {
                 </Link>
 
                 {role === 'admin' && (
-                <button className="bg-lamaPurple grid place-items-center w-7 h-7 rounded-full">
-                    <Image src="/delete.png" alt="view" width={16} height={16}/>
-                </button>
+                <FormModal type="delete" table="teacher" id={item.id}/>
                 )}
             </div>
         </td>
@@ -102,9 +101,12 @@ const TeachersList = () => {
                     <button className="bg-lamaYellow w-8 h-8 rounded-full grid place-items-center p-1">
                         <Image src="/sort.png" alt="filter" width={14} height={14}/>
                     </button>
-                    {role === 'admin' && <button className="bg-lamaYellow w-8 h-8 rounded-full grid place-items-center p-1">
-                        <Image src="/plus.png" alt="filter" width={14} height={14}/>
-                    </button>}
+                    {role === 'admin' && 
+                    // <button className="bg-lamaYellow w-8 h-8 rounded-full grid place-items-center p-1">
+                    //     <Image src="/create.png" alt="filter" width={14} height={14}/>
+                    // </button>
+                    <FormModal type="create" table="teacher"/>
+                    }
                 </div>
             </div>
         </div>

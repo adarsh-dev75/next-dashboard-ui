@@ -1,3 +1,4 @@
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination"
 import Table from "@/components/Table"
 import TableSearch from "@/components/TableSearch"
@@ -51,16 +52,13 @@ const ClassList = () => {
         <td className="hidden lg:table-cell">{item.supervisor}</td>
         <td>
             <div className="flex items-center gap-2">
-                <Link href={`/list/teachers/${item.id}`}>
-                    <button className="bg-lamaSky grid place-items-center w-7 h-7 rounded-full">
-                        <Image src="/edit.png" alt="view" width={16} height={16}/>
-                    </button>
-                </Link>
-
+               
                 {role === 'admin' && (
-                <button className="bg-lamaPurple grid place-items-center w-7 h-7 rounded-full">
-                    <Image src="/delete.png" alt="view" width={16} height={16}/>
-                </button>
+                    <>
+                     <FormModal type="update" table="class" data={item}/>
+            <FormModal type="delete" table="class" id={item.id}/>
+                    </>
+    
                 )}
             </div>
         </td>
@@ -82,9 +80,7 @@ const ClassList = () => {
                         <Image src="/sort.png" alt="filter" width={14} height={14}/>
                     </button>
                    {role === 'admin' && (
-                     <button className="bg-lamaYellow w-8 h-8 rounded-full grid place-items-center p-1">
-                        <Image src="/plus.png" alt="filter" width={14} height={14}/>
-                    </button>
+                    <FormModal type="create" table="class" />
                    )}
                 </div>
             </div>

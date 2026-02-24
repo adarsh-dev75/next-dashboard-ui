@@ -2,4 +2,5 @@
 2. using recharts for graphs
 3. use react-calender library
 4. use react-big-calender for student calender
-3.00
+5. use react hook form and zod
+3.26
