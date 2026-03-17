@@ -3,4 +3,13 @@
 3. use react-calender library
 4. use react-big-calender for student calender
 5. use react hook form and zod
-3.26
+
+//backend
+1. for planning use eraser.io
+2. using prisma, npm i prisma
+3. npx prisma init
+4. run to make db: npx prisma migrate dev --name init
+5. to see tables: npx prisma studio
+6. npx prisma db seed
+7. npx prisma migrate reset - if need then run: npx prisma studio
+44.22
