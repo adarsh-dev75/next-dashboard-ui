@@ -12,4 +12,4 @@
 5. to see tables: npx prisma studio
 6. npx prisma db seed
 7. npx prisma migrate reset - if need then run: npx prisma studio
-44.22
+8. npx prisma db push --force-reset - if need after doing nay changes on schema file

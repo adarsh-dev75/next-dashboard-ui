@@ -151,31 +151,31 @@ const SingleTeacherPage = () => {
             <div className="flex mt-4 flex-wrap text-xs text-gray-500 gap-4">
               <Link
                 className="p-3 bg-lamaSkyLight border border-slate-50 rounded-md"
-                href="/"
+                href={`/list/classes?supervisorId=${'teacher2'}`}
               >
                 Teacher&apos;s Classes
               </Link>
               <Link
                 className="p-3 bg-lamaYellowLight border border-slate-50 rounded-md"
-                href="/"
+                href={`/list/students?teacherId=${'teacher2'}`}
               >
                 Teacher&apos;s Students
               </Link>
               <Link
                 className="p-3 bg-lamaPurpleLight border border-slate-50 rounded-md"
-                href="/"
+                href={`/list/lessons?teacherId=${'teacher2'}`}
               >
                 Teacher&apos;s Lessons
               </Link>
               <Link
                 className="p-3 bg-pink-50 border border-slate-50 rounded-md"
-                href="/"
+                href={`/list/exams?teacherId=${'teacher2'}`}
               >
                 Teacher&apos;s Exams
               </Link>
               <Link
                 className="p-3 bg-lamaSkyLight border border-slate-50 rounded-md"
-                href="/"
+                href={`/list/assignments?teacherId=${'teacher2'}`}
               >
                 Teacher&apos;s Assignments
               </Link>
